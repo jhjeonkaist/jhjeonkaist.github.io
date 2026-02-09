@@ -486,15 +486,6 @@ body.light-mode .timeline-content p:last-child {
     flex-shrink: 0;
 }
 
-.institution-logo.kaist {
-    height: 52px;
-    width: 52px;
-    background: white;
-    padding: 6px;
-    border-radius: 50%;
-    object-fit: contain;
-}
-
 .institution-badge {
     display: inline-flex;
     align-items: center;
