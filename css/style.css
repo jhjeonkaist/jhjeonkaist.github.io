@@ -321,7 +321,7 @@ body.light-mode .section-alt {
 .about-content {
     max-width: 800px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
 }
 
 .about-content p {
@@ -342,7 +342,7 @@ body.light-mode .about-content p {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 2rem;
 }
 
@@ -476,10 +476,13 @@ body.light-mode .timeline-content p:last-child {
 }
 
 .institution-logo.kaist {
-    height: 45px;
+    height: 50px;
+    width: 50px;
     background: white;
-    padding: 4px;
+    padding: 6px;
     border-radius: 50%;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 .institution-badge {
@@ -618,24 +621,9 @@ body.light-mode .publication-card {
 }
 
 .publication-card.featured {
-    border: 2px solid var(--primary);
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08));
-    box-shadow: 0 0 20px rgba(102, 126, 234, 0.2);
-    position: relative;
-}
-
-.publication-card.featured::before {
-    content: 'Featured';
-    position: absolute;
-    top: -10px;
-    right: 20px;
-    background: var(--gradient);
-    color: white;
-    padding: 0.2rem 0.75rem;
-    border-radius: 10px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
+    border: 2px solid var(--primary) !important;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+    box-shadow: 0 0 15px rgba(102, 126, 234, 0.15);
 }
 
 .publication-year {
