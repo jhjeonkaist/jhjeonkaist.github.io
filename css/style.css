@@ -190,21 +190,15 @@ body.light-mode .hero {
     margin-bottom: 2rem;
 }
 
-.placeholder-avatar {
-    width: 180px;
-    height: 180px;
+.profile-avatar {
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
-    background: var(--gradient);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    object-fit: cover;
     margin: 0 auto;
+    display: block;
     box-shadow: 0 0 60px rgba(102, 126, 234, 0.4);
-}
-
-.placeholder-avatar i {
-    font-size: 4rem;
-    color: white;
+    border: 4px solid rgba(102, 126, 234, 0.3);
 }
 
 .gradient-text {
