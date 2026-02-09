@@ -523,6 +523,72 @@ body.light-mode .timeline-lab {
     text-decoration: underline;
 }
 
+/* Project Items in Timeline */
+.timeline-projects {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.project-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 8px;
+    border-left: 3px solid var(--primary);
+    transition: var(--transition);
+}
+
+body.light-mode .project-item {
+    background: rgba(102, 126, 234, 0.08);
+}
+
+.project-item:hover {
+    background: rgba(102, 126, 234, 0.2);
+    transform: translateX(5px);
+}
+
+.project-logo {
+    height: 32px;
+    width: auto;
+    max-width: 100px;
+    object-fit: contain;
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project-info strong {
+    display: inline;
+    font-size: 0.95rem;
+}
+
+.project-badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    background: var(--gradient);
+    color: white;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+.project-info p {
+    font-size: 0.85rem;
+    color: var(--text-muted-dark);
+    margin: 0.25rem 0 0 0;
+}
+
+body.light-mode .project-info p {
+    color: var(--text-muted-light);
+}
+
 /* Publications */
 .publications-list {
     display: flex;
