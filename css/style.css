@@ -881,3 +881,184 @@ body.light-mode .footer {
         left: 0;
     }
 }
+
+/* Print Styles for PDF Export */
+@media print {
+    /* Page setup */
+    @page {
+        size: A4;
+        margin: 1.5cm;
+    }
+
+    /* Hide navigation and interactive elements */
+    .navbar,
+    .nav-toggle,
+    .theme-toggle,
+    .scroll-indicator,
+    .footer {
+        display: none !important;
+    }
+
+    /* Hero section optimization */
+    .hero {
+        min-height: auto;
+        padding: 2rem 0 3rem;
+        page-break-after: always;
+        background: white !important;
+    }
+
+    .profile-avatar {
+        width: 150px;
+        height: 150px;
+        box-shadow: none;
+        border: 2px solid #667eea;
+    }
+
+    .gradient-text {
+        -webkit-text-fill-color: #667eea !important;
+        color: #667eea !important;
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle,
+    .hero-tagline {
+        color: #1a202c !important;
+    }
+
+    .social-links {
+        display: none;
+    }
+
+    /* Section optimization */
+    .section {
+        padding: 2rem 0;
+        page-break-after: always;
+        background: white !important;
+    }
+
+    .section:last-of-type {
+        page-break-after: auto;
+    }
+
+    .section-alt {
+        background: white !important;
+    }
+
+    .section-title {
+        color: #667eea !important;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* About section */
+    .about-content p {
+        color: #1a202c !important;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+
+    /* Timeline optimization */
+    .timeline-content {
+        background: white !important;
+        border: 1px solid #e2e8f0 !important;
+        box-shadow: none !important;
+        page-break-inside: avoid;
+        margin-bottom: 1rem;
+    }
+
+    .timeline-date {
+        background: #667eea !important;
+        font-size: 0.8rem;
+    }
+
+    .timeline-header h3 {
+        font-size: 1.1rem;
+        color: #1a202c !important;
+    }
+
+    .timeline-role,
+    .timeline-lab a {
+        color: #667eea !important;
+    }
+
+    .timeline-content p {
+        color: #1a202c !important;
+        font-size: 0.9rem;
+    }
+
+    /* Publications optimization */
+    .publication-card {
+        background: white !important;
+        border: 1px solid #e2e8f0 !important;
+        box-shadow: none !important;
+        page-break-inside: avoid;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+
+    .publication-card.featured {
+        border: 2px solid #667eea !important;
+        background: rgba(102, 126, 234, 0.05) !important;
+    }
+
+    .publication-year {
+        color: #667eea !important;
+        font-size: 1.2rem;
+    }
+
+    .publication-content h4 {
+        color: #1a202c !important;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .publication-content .authors,
+    .publication-content .venue {
+        color: #64748b !important;
+        font-size: 0.85rem;
+    }
+
+    .impact-badge,
+    .rank-badge,
+    .presentation-badge {
+        font-size: 0.75rem;
+    }
+
+    /* Contact section */
+    #contact {
+        page-break-after: auto;
+    }
+
+    .contact-email {
+        background: #667eea !important;
+        color: white !important;
+    }
+
+    /* Force light mode colors */
+    body {
+        background: white !important;
+        color: #1a202c !important;
+    }
+
+    /* Remove animations */
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    /* Ensure good contrast */
+    a {
+        color: #667eea !important;
+        text-decoration: none;
+    }
+
+    /* Logo sizing for print */
+    .institution-logo {
+        max-height: 30px;
+    }
+
+    .nav-logo-img {
+        display: none;
+    }
+}
