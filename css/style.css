@@ -292,7 +292,7 @@ body.light-mode .social-links a {
 
 /* Sections */
 .section {
-    padding: 100px 0;
+    padding: 120px 0;
 }
 
 .section-alt {
@@ -705,6 +705,10 @@ body.light-mode .publication-content .venue {
     border-radius: 15px;
     font-size: 0.8rem;
     font-weight: 600;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 .presentation-badge {
