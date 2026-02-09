@@ -618,8 +618,24 @@ body.light-mode .publication-card {
 }
 
 .publication-card.featured {
-    border-color: var(--primary);
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+    border: 2px solid var(--primary);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08));
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.2);
+    position: relative;
+}
+
+.publication-card.featured::before {
+    content: 'Featured';
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: var(--gradient);
+    color: white;
+    padding: 0.2rem 0.75rem;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .publication-year {
