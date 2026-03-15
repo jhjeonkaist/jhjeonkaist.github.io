@@ -2,9 +2,12 @@
 const themeToggle = document.querySelector('.theme-toggle');
 const body = document.body;
 
-// Check for saved theme preference
+// Check for saved theme preference; default is light mode
 const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'light') {
+if (savedTheme === 'dark') {
+    // stay in dark mode (no class added)
+    themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+} else {
     body.classList.add('light-mode');
     themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
 }

@@ -681,6 +681,14 @@ body.light-mode .publication-content .venue {
     margin-bottom: 0.5rem;
 }
 
+.publication-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+    align-items: center;
+}
+
 .impact-badge {
     display: inline-block;
     padding: 0.25rem 0.75rem;
@@ -689,7 +697,6 @@ body.light-mode .publication-content .venue {
     border-radius: 15px;
     font-size: 0.8rem;
     font-weight: 600;
-    margin-right: 0.5rem;
 }
 
 .impact-badge.highlight {
@@ -705,7 +712,6 @@ body.light-mode .publication-content .venue {
     border-radius: 15px;
     font-size: 0.8rem;
     font-weight: 600;
-    margin-left: 0.5rem;
     line-height: 1.4;
 }
 
@@ -722,6 +728,43 @@ body.light-mode .publication-content .venue {
 .presentation-badge.oral {
     background: var(--gradient);
     color: white;
+}
+
+.corresponding-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    color: white;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.corresponding-badge i {
+    margin-right: 0.3rem;
+    font-size: 0.75rem;
+}
+
+.arxiv-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: rgba(179, 27, 27, 0.15);
+    color: #b31b1b;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.arxiv-badge:hover {
+    background: #b31b1b;
+    color: white;
+}
+
+body.light-mode .arxiv-badge {
+    background: rgba(179, 27, 27, 0.1);
+    color: #b31b1b;
 }
 
 /* Contact Section */
