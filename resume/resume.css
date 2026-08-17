@@ -278,14 +278,14 @@ body {
 }
 
 .pub-badge.rank {
-    background: rgba(16, 185, 129, 0.1);
-    color: #10b981;
-    border: 1px solid rgba(16, 185, 129, 0.2);
+    background: var(--bg-subtle);
+    color: var(--text-muted);
+    border: 1px solid var(--border);
     margin-left: 0.3rem;
 }
 
 .pub-badge.oral {
-    background: #b91c1c;
+    background: var(--primary);
     color: white;
     border-color: transparent;
 }

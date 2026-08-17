@@ -600,10 +600,15 @@ body.light-mode .timeline-content p:last-child {
 }
 
 .institution-badge.hits {
-    background: rgba(0, 168, 150, 0.15);
-    color: #00a896;
-    border: 1px solid rgba(0, 168, 150, 0.25);
+    background: var(--bg-subtle);
+    color: var(--text-muted-dark);
+    border: 1px solid var(--border-dark);
     border-radius: 4px;
+}
+body.light-mode .institution-badge.hits {
+    background: var(--bg-light-alt);
+    color: var(--text-muted-light);
+    border-color: var(--border-light);
 }
 
 .timeline-lab {
@@ -815,18 +820,20 @@ body.light-mode .impact-badge, body.light-mode .presentation-badge {
     border-color: rgba(37, 99, 235, 0.2);
 }
 
-.impact-badge.highlight, body.light-mode .impact-badge.highlight {
-    background: var(--primary);
-    color: white;
-    border-color: transparent;
+.impact-badge.highlight, body.light-mode .impact-badge.highlight,
+.presentation-badge.oral, body.light-mode .presentation-badge.oral,
+.corresponding-badge, body.light-mode .corresponding-badge {
+    background: var(--primary) !important;
+    color: white !important;
+    border-color: transparent !important;
 }
 
 .rank-badge {
     display: inline-block;
     padding: 2px 6px;
-    background: rgba(16, 185, 129, 0.1);
-    color: #10b981;
-    border: 1px solid rgba(16, 185, 129, 0.2);
+    background: var(--bg-subtle);
+    color: var(--text-muted-dark);
+    border: 1px solid var(--border-dark);
     border-radius: 4px;
     font-family: SFMono-Regular, Consolas, Monaco, monospace;
     font-size: 0.72rem;
@@ -834,22 +841,10 @@ body.light-mode .impact-badge, body.light-mode .presentation-badge {
     line-height: 1.4;
 }
 
-.presentation-badge.oral, body.light-mode .presentation-badge.oral {
-    background: #b91c1c;
-    color: white;
-    border-color: transparent;
-}
-
-.corresponding-badge {
-    display: inline-block;
-    padding: 2px 6px;
-    background: rgba(245, 158, 11, 0.1);
-    color: #f59e0b;
-    border: 1px solid rgba(245, 158, 11, 0.2);
-    border-radius: 4px;
-    font-family: SFMono-Regular, Consolas, Monaco, monospace;
-    font-size: 0.72rem;
-    font-weight: 600;
+body.light-mode .rank-badge {
+    background: var(--bg-light-alt);
+    color: var(--text-muted-light);
+    border-color: var(--border-light);
 }
 
 .corresponding-badge i {
@@ -859,25 +854,30 @@ body.light-mode .impact-badge, body.light-mode .presentation-badge {
 
 .arxiv-badge {
     display: inline-block;
-    padding: 0.25rem 0.75rem;
-    background: rgba(179, 27, 27, 0.15);
-    color: #b31b1b;
-    border-radius: 15px;
-    font-size: 0.8rem;
+    padding: 2px 6px;
+    background: var(--accent-subtle-dark);
+    color: var(--primary);
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    border-radius: 4px;
+    font-family: SFMono-Regular, Consolas, Monaco, monospace;
+    font-size: 0.72rem;
     font-weight: 600;
     text-decoration: none;
     transition: var(--transition);
 }
 
-.arxiv-badge:hover {
-    background: #b31b1b;
-    color: white;
+body.light-mode .arxiv-badge {
+    background: var(--accent-subtle-light);
+    border-color: rgba(37, 99, 235, 0.2);
 }
 
-body.light-mode .arxiv-badge {
-    background: rgba(179, 27, 27, 0.1);
-    color: #b31b1b;
+.arxiv-badge:hover {
+    background: var(--primary);
+    color: white;
+    border-color: transparent;
 }
+
+
 
 /* Contact Section */
 .contact-content {
