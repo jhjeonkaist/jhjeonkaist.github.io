@@ -815,7 +815,7 @@ body.light-mode .impact-badge, body.light-mode .presentation-badge {
     border-color: rgba(37, 99, 235, 0.2);
 }
 
-.impact-badge.highlight {
+.impact-badge.highlight, body.light-mode .impact-badge.highlight {
     background: var(--primary);
     color: white;
     border-color: transparent;
@@ -834,7 +834,7 @@ body.light-mode .impact-badge, body.light-mode .presentation-badge {
     line-height: 1.4;
 }
 
-.presentation-badge.oral {
+.presentation-badge.oral, body.light-mode .presentation-badge.oral {
     background: #b91c1c;
     color: white;
     border-color: transparent;
