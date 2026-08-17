@@ -746,7 +746,11 @@ body.light-mode .publication-card {
     border-left: 3px solid var(--primary) !important;
     background: var(--accent-subtle-dark) !important;
     padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    margin-left: -1rem !important;
+    margin-right: -1rem !important;
     box-shadow: none !important;
+    border-radius: 4px;
 }
 
 body.light-mode .publication-card.featured {
@@ -795,87 +799,7 @@ body.light-mode .publication-content .venue {
     margin-bottom: 0.5rem;
 }
 
-.publication-badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    margin-top: 0.5rem;
-    align-items: center;
-}
 
-.impact-badge, .presentation-badge {
-    display: inline-block;
-    padding: 2px 6px;
-    background: var(--accent-subtle-dark);
-    color: var(--primary);
-    border: 1px solid rgba(59, 130, 246, 0.25);
-    border-radius: 4px;
-    font-family: SFMono-Regular, Consolas, Monaco, monospace;
-    font-size: 0.72rem;
-    font-weight: 600;
-}
-
-body.light-mode .impact-badge, body.light-mode .presentation-badge {
-    background: var(--accent-subtle-light);
-    border-color: rgba(37, 99, 235, 0.2);
-}
-
-.impact-badge.highlight, body.light-mode .impact-badge.highlight,
-.presentation-badge.oral, body.light-mode .presentation-badge.oral,
-.corresponding-badge, body.light-mode .corresponding-badge {
-    background: var(--primary) !important;
-    color: white !important;
-    border-color: transparent !important;
-}
-
-.rank-badge {
-    display: inline-block;
-    padding: 2px 6px;
-    background: var(--bg-subtle);
-    color: var(--text-muted-dark);
-    border: 1px solid var(--border-dark);
-    border-radius: 4px;
-    font-family: SFMono-Regular, Consolas, Monaco, monospace;
-    font-size: 0.72rem;
-    font-weight: 600;
-    line-height: 1.4;
-}
-
-body.light-mode .rank-badge {
-    background: var(--bg-light-alt);
-    color: var(--text-muted-light);
-    border-color: var(--border-light);
-}
-
-.corresponding-badge i {
-    margin-right: 0.3rem;
-    font-size: 0.75rem;
-}
-
-.arxiv-badge {
-    display: inline-block;
-    padding: 2px 6px;
-    background: var(--accent-subtle-dark);
-    color: var(--primary);
-    border: 1px solid rgba(59, 130, 246, 0.25);
-    border-radius: 4px;
-    font-family: SFMono-Regular, Consolas, Monaco, monospace;
-    font-size: 0.72rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: var(--transition);
-}
-
-body.light-mode .arxiv-badge {
-    background: var(--accent-subtle-light);
-    border-color: rgba(37, 99, 235, 0.2);
-}
-
-.arxiv-badge:hover {
-    background: var(--primary);
-    color: white;
-    border-color: transparent;
-}
 
 
 
@@ -1165,6 +1089,9 @@ body.light-mode .footer {
         border-left: 3px solid #2563eb !important;
         background: #eff6ff !important;
         padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        margin-left: -1rem !important;
+        margin-right: -1rem !important;
     }
 
     .publication-year {

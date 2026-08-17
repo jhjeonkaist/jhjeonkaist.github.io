@@ -258,37 +258,7 @@ body {
     margin-top: 0.05rem;
 }
 
-.pub-badge {
-    display: inline-block;
-    padding: 0.15rem 0.5rem;
-    background: var(--accent-subtle);
-    color: var(--primary);
-    border: 1px solid rgba(37, 99, 235, 0.2);
-    border-radius: 4px;
-    font-size: 7.5pt;
-    font-weight: 600;
-    margin-top: 0.2rem;
-    margin-right: 0.3rem;
-}
 
-.pub-badge.highlight {
-    background: var(--primary);
-    color: white;
-    border-color: transparent;
-}
-
-.pub-badge.rank {
-    background: var(--bg-subtle);
-    color: var(--text-muted);
-    border: 1px solid var(--border);
-    margin-left: 0.3rem;
-}
-
-.pub-badge.oral {
-    background: var(--primary);
-    color: white;
-    border-color: transparent;
-}
 
 
 
