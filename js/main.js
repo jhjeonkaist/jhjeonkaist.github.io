@@ -59,18 +59,13 @@ document.querySelectorAll('.fade-in').forEach(el => {
 
 // Navbar background on scroll
 const navbar = document.querySelector('.navbar');
-let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-
-    if (currentScroll > 100) {
-        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.3)';
+    if (window.pageYOffset > 50) {
+        navbar.classList.add('navbar-scrolled');
     } else {
-        navbar.style.boxShadow = 'none';
+        navbar.classList.remove('navbar-scrolled');
     }
-
-    lastScroll = currentScroll;
 });
 
 // Smooth scroll for anchor links
